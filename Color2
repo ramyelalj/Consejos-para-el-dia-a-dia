@@ -1,6 +1,0 @@
-/* Estilo para el encabezado (la barra superior) */
-header {
-    background-color: #4CAF50; /* Un verde amigable */
-    color: white;
-    /* ... el resto del código ... */
-}
