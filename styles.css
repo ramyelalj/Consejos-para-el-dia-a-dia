@@ -1,16 +1,16 @@
 /* --- Estilos Generales --- */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9; /* Gris muy claro */
-    color: #333; /* Color de texto oscuro */
+    background-color: #e0ffe0; /* Fondo: ¡Verde claro! */
+    color: #333; 
     margin: 0;
     padding: 0;
-    line-height: 1.6; /* Mejora la legibilidad */
+    line-height: 1.6;
 }
 
 /* --- Estilo del Encabezado Superior --- */
 header {
-    background-color: #4CAF50; /* Verde amigable, cambiado del azul anterior */
+    background-color: #4CAF50; /* Verde principal */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -24,11 +24,11 @@ h1 {
 
 /* --- Estilo del Contenido Principal --- */
 main {
-    max-width: 900px; /* Ancho un poco más amplio */
-    margin: 40px auto; /* Centramos el contenido y damos espacio */
+    max-width: 900px;
+    margin: 40px auto; 
     padding: 30px;
     background-color: white;
-    border-radius: 10px; /* Esquinas más redondeadas */
+    border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
@@ -41,31 +41,41 @@ main {
 
 section {
     padding: 20px 0;
-    border-bottom: 1px solid #eee; /* Separador sutil entre secciones */
+    border-bottom: 1px solid #eee; 
 }
 
 section:last-child {
-    border-bottom: none; /* Quitamos el separador de la última sección */
+    border-bottom: none; 
 }
 
 h2 {
-    color: #4CAF50; /* Color verde para los subtítulos */
+    color: #4CAF50;
     border-bottom: 2px solid #e0e0e0;
     padding-bottom: 5px;
 }
 
 /* --- Estilo de las Listas --- */
 ul {
-    list-style-type: none; /* Quitamos los puntos por defecto */
+    list-style-type: none;
     padding-left: 0;
 }
 
 ul li {
-    background: #e8f5e9; /* Fondo muy claro para cada elemento */
+    background: #e8f5e9; /* Fondo muy claro para cada elemento (verde pálido) */
     margin-bottom: 10px;
     padding: 10px 15px;
-    border-left: 5px solid #4CAF50; /* Línea de color a la izquierda */
+    border-left: 5px solid #4CAF50;
     border-radius: 4px;
+}
+
+/* --- Estilo para las Imágenes --- */
+.section-image {
+    max-width: 100%; 
+    height: auto;    
+    display: block;  
+    margin: 20px auto; /* Centra la imagen y le da espacio vertical */
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 /* --- Estilo del Pie de Página --- */
@@ -74,13 +84,12 @@ footer {
     color: white;
     text-align: center;
     padding: 15px 0;
-    position: relative; /* Cambiado a relative para mejor flujo en contenido largo */
+    position: relative; 
     margin-top: 40px;
 }
 
 /* --- Media Queries para Teléfonos Móviles (Responsive Design) --- */
 
-/* Esta regla se aplica SÓLO cuando la pantalla es de 650px o menos */
 @media (max-width: 650px) {
     
     body {
@@ -89,7 +98,7 @@ footer {
     
     h1 {
         font-size: 1.5em;
-        padding: 0 10px; /* Pequeño padding para que no se pegue a los bordes */
+        padding: 0 10px;
     }
     
     main {
@@ -97,10 +106,14 @@ footer {
         margin: 20px auto; 
         padding: 15px; 
         max-width: none; 
-        box-shadow: none; /* Quitamos la sombra en móviles */
+        box-shadow: none;
     }
     
     h2 {
         font-size: 1.3em;
+    }
+    
+    .section-image {
+        margin: 15px auto; /* Ajuste de margen para móviles */
     }
 }
